@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+
+  configserver:
+    image: subha92/configserver:latest
+    mem_limit: 700m
+    ports:
+      - "8071:8071"
+    networks:
+     - subhabank
+    
+networks:
+  subhabank:
